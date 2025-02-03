@@ -16,7 +16,7 @@ def longestConsecutive(nums):
         else:
             if maxlen <= curlen:
                 maxlen = curlen
-                curlen = 1
+            curlen = 1
     return maxlen
 
 nums = [9,1,-3,2,4,8,3,-1,6,-2,-4,7]
