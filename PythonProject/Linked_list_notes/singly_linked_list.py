@@ -73,6 +73,16 @@ class SinglyLinkedList:
             curr = curr.next
         prev.next = curr.next
 
+    def size(self):
+        if self.head is None:
+            return 0
+        curr = self.head
+        count = 0
+        while curr:
+            count+=1
+            curr = curr.next
+        return count
+
     def printLL(self):
         current_node = self.head
         while current_node:
@@ -88,6 +98,7 @@ s.insertAtBeginning(3)
 s.insertAtBeginning(4)
 s.insertAtEnd(5)
 s.insertAtIndex(6, 2)
+print(f"Size of linked list: {s.size()}")
 s.printLL()
 s.deleteAtBeginning()
 s.deleteAtEnd()
