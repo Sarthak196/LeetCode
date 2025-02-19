@@ -25,7 +25,9 @@ def coin_change(target, coins):
     # Loop through each coin and build solutions
     for coin in coins:
         for amount in range(coin, target + 1):
-            # Update the DP value for this amount
+            # Update the DP value for this amount by checking if using this coin is better than previous value
+            # dp[amount - coin] represents the minimum number of coins needed to make the amount amount - coin.
+            # Adding 1 accounts for using the current coin to make up the remaining amount.
             dp[amount] = min(dp[amount], dp[amount - coin] + 1)
 
     # If target cannot be achieved, dp[target] will still have float("inf") value
