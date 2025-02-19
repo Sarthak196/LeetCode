@@ -19,22 +19,22 @@ def eliminate_game(n):
     #     return list(reversed(l))
     #
     # return remove_element(l, step)
-    # remaining = n
-    # step = 1
-    # head = 1
-    # left_to_right = True
-    #
-    # while remaining > 1:
-    #     # If we're moving from left or it's an odd count, update the head
-    #     if left_to_right or remaining % 2 == 1:
-    #         head += step
-    #     # Reduce the number of elements remaining
-    #     remaining //= 2
-    #     # Double the step size (distance between remaining numbers)
-    #     step *= 2
-    #     # Alternate the direction
-    #     left_to_right = not left_to_right
-    #
-    # return head
+    remaining = n
+    step = 1
+    head = 1
+    left_to_right = True
+
+    while remaining > 1:
+        # If we're moving from left or it's an odd count, update the head
+        if left_to_right or remaining % 2 == 1:
+            head += step
+        # Reduce the number of elements remaining
+        remaining //= 2
+        # Double the step size (distance between remaining numbers)
+        step *= 2
+        # Alternate the direction
+        left_to_right = not left_to_right
+
+    return head
 
 print(eliminate_game(6))
