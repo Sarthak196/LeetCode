@@ -6,7 +6,7 @@ def findMin(nums):
             return min(nums[l], res)
         m = (l + r) // 2 # m is the middle index
         res = min(res, nums[m]) # res is the minimum of the result and the middle index
-        if nums[m] >= nums[l]: # if the middle index is greater than or equal to the left index, move the left index to
+        if nums[m] >= nums[r]: # if the middle index is greater than or equal to the right index, move the left index to
                                 # the middle index plus 1 as the pivot point is on the right side else move the right
                                 # index to the middle index minus 1
             l = m + 1

@@ -7,7 +7,7 @@ def permute(nums):
         for i in range(len(nums)):
             newNums = nums[:i] + nums[i + 1:] # take rest of the number except at ith pos
             newPerm = perm + [nums[i]]  # keep updating the prem as nums keep changing with newNums
-            recursive(newNums, newPerm, res) 
+            recursive(newNums, newPerm, res)
         return res
 
     return recursive(nums)
