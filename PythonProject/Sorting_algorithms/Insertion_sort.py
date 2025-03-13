@@ -11,4 +11,5 @@ def insertion_sort(nums):
 nums = [3,2,66,45,12,1,3]
 print(insertion_sort(nums))# [1, 2, 3, 3, 12, 45, 66]
 
+# time complexity: o(n2)
 # here we perform n-1 passes and keep inserting the smaller element to the left and larger element to right

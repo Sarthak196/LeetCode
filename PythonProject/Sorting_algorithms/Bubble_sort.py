@@ -9,4 +9,6 @@ def bubble_sort(nums):
 nums = [3,2,66,45,12,1,3]
 print(bubble_sort(nums))# [1, 2, 3, 3, 12, 45, 66]
 
+# time complexity: o(n2)
+
 # in bubble sort, sorting is done in pairs.

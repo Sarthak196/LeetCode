@@ -11,5 +11,7 @@ def selection_sort(nums):
 nums = [3,2,66,45,12,1,3]
 print(selection_sort(nums))# [1, 2, 3, 3, 12, 45, 66]
 
+#time complexity: o(n2)
+
 # in selection sort we select the largest element and keep going until we find somthing larger. Finally, we swap the index
 # of the large element to the last index

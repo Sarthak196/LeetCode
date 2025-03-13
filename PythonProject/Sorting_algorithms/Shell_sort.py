@@ -20,5 +20,7 @@ def insertion_sort(nums, start, gap): # these smaller parts are called as gap
 nums = [3,2,66,45,12,1,3]
 print(shell_sort(nums))# [1, 2, 3, 3, 12, 45, 66]
 
+# time complexity: o(nlogn)
+
 # Shell sort is similar to insertion sort. In shell sort we are just breaking that list into smaller parts and applying
 # insertion sort on it.
