@@ -16,5 +16,15 @@ def lengthOfLongestSubstring(s):
             maxLength = max(maxLength, length)
     return maxLength
 
+    # l, maxlen = 0, 0
+    # d = {}
+    # for r in range(len(s)):
+    #     while s[r] in d and l <= r:
+    #         del d[s[l]]
+    #         l += 1
+    #     d[s[r]] = 1
+    #     maxlen = max(maxlen, (r - l + 1))
+    # return maxlen
+
 s = "zyxyxza"
 print(lengthOfLongestSubstring(s)) # 4
